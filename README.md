@@ -1,8 +1,8 @@
 # Python Darknet PyTorch Trainer
 
-This is a training framework for YOLOv3 in PyTorch, using the Darknet framework.
+This is a training framework for 5 and 8 using ultralytics , and for yolo 12347 .weights using  Darknet framework.
 
-![firstpage.png](blankspuge.png)
+![GIF description](path/to/animated_gif)
 
 ## Requirements
 
@@ -10,4 +10,4 @@ This is a training framework for YOLOv3 in PyTorch, using the Darknet framework.
 - PyTorch 1.7.0+
 - torchvision 0.8.1+
 - OpenCV 4.4.0+
-- ...
+- clear ml
