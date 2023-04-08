@@ -2,7 +2,7 @@
 
 This is a training framework for YOLOv3 in PyTorch, using the Darknet framework.
 
-![firstpage.png](images/firstpage.png)
+![firstpage.png](blankspuge.png)
 
 ## Requirements
 
