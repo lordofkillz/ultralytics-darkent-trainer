@@ -1,0 +1,3364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QTabWidget" name="MainWidget">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>800</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(105, 0, 2);</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="DARKNET">
+       <attribute name="title">
+        <string>DARKNET</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>598</width>
+             <height>756</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QFrame" name="darknet_frame_whole">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>580</width>
+                <height>277</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>3840</width>
+                <height>2160</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(193, 190, 188);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::WinPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>10</number>
+              </property>
+              <property name="midLineWidth">
+               <number>10</number>
+              </property>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="3" column="0">
+                <widget class="QGroupBox" name="groupBox_4">
+                 <property name="title">
+                  <string>convert json</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QPushButton" name="classes">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>classes.txt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="outputButton">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>.txt loc</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="inputButton">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>json</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="3">
+                <widget class="QGroupBox" name="groupBox_3">
+                 <property name="title">
+                  <string>create files</string>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QPushButton" name="import_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Images</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSpinBox" name="class_numb">
+                    <property name="styleSheet">
+                     <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                    </property>
+                    <property name="value">
+                     <number>1</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="class_name">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>person</string>
+                    </property>
+                    <property name="placeholderText">
+                     <string>person</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="dropdown">
+                    <property name="styleSheet">
+                     <string notr="true">				QComboBox
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(59, 61, 62) /*bg_alt*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					border: 1px solid #000;
+					padding-left: 6px;
+					color: rgb(238, 238, 238) /*txt*/;
+					height: 20px;
+				}
+				QComboBox::disabled
+				{
+					background-color: #404040;
+					color: #656565;
+					border-color: rgb(0, 0, 0) /*bg_gen*/;
+				}
+				QComboBox:on
+				{
+					background-color: rgb(236, 157, 0) /*accent*/;
+					color: rgb(28, 28, 28) /*txt_bg*/;
+				}
+				QComboBox QAbstractItemView
+				{
+					background-color: rgb(28, 28, 32) /*bg_prim*/;
+					color: rgb(238, 238, 238) /*txt*/;
+					border: 1px solid black;
+					selection-background-color: rgb(236, 157, 0) /*accent*/;
+					outline: 0;
+				}
+				QComboBox::drop-down
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(0, 0, 0) /*bg_gen*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					subcontrol-origin: padding;
+					subcontrol-position: top right;
+					width: 15px;
+					border-left-width: 1px;
+					border-left-color: black;
+					border-left-style: solid; 
+				}
+				QComboBox::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 8px;
+					height: 8px;
+				}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>train.txt</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>valid.txt</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="output_button">
+                    <property name="styleSheet">
+                     <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>save</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="image_label">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                      <horstretch>100</horstretch>
+                      <verstretch>100</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>100</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(252, 255, 233);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::WinPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="midLineWidth">
+                     <number>10</number>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="1" rowspan="2" colspan="2">
+                <widget class="QGroupBox" name="groupBox_5">
+                 <property name="title">
+                  <string>special</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="create_blanks_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Create Blanks</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="purge">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>purge</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QPushButton" name="build">
+                    <property name="styleSheet">
+                     <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>BUILD DARKNET</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="combine_txt_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>combine txt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <spacer name="horizontalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QGroupBox" name="groupBox_6">
+                 <property name="title">
+                  <string>create negaitves</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <item>
+                   <widget class="QComboBox" name="image_format_combo">
+                    <property name="styleSheet">
+                     <string notr="true">				QComboBox
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(59, 61, 62) /*bg_alt*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					border: 1px solid #000;
+					padding-left: 6px;
+					color: rgb(238, 238, 238) /*txt*/;
+					height: 20px;
+				}
+				QComboBox::disabled
+				{
+					background-color: #404040;
+					color: #656565;
+					border-color: rgb(0, 0, 0) /*bg_gen*/;
+				}
+				QComboBox:on
+				{
+					background-color: rgb(236, 157, 0) /*accent*/;
+					color: rgb(28, 28, 28) /*txt_bg*/;
+				}
+				QComboBox QAbstractItemView
+				{
+					background-color: rgb(28, 28, 32) /*bg_prim*/;
+					color: rgb(238, 238, 238) /*txt*/;
+					border: 1px solid black;
+					selection-background-color: rgb(236, 157, 0) /*accent*/;
+					outline: 0;
+				}
+				QComboBox::drop-down
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(0, 0, 0) /*bg_gen*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					subcontrol-origin: padding;
+					subcontrol-position: top right;
+					width: 15px;
+					border-left-width: 1px;
+					border-left-color: black;
+					border-left-style: solid; 
+				}
+				QComboBox::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 8px;
+					height: 8px;
+				}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>jpg</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>png</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="limit_blanks">
+                    <property name="styleSheet">
+                     <string notr="true">				QComboBox
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(59, 61, 62) /*bg_alt*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					border: 1px solid #000;
+					padding-left: 6px;
+					color: rgb(238, 238, 238) /*txt*/;
+					height: 20px;
+				}
+				QComboBox::disabled
+				{
+					background-color: #404040;
+					color: #656565;
+					border-color: rgb(0, 0, 0) /*bg_gen*/;
+				}
+				QComboBox:on
+				{
+					background-color: rgb(236, 157, 0) /*accent*/;
+					color: rgb(28, 28, 28) /*txt_bg*/;
+				}
+				QComboBox QAbstractItemView
+				{
+					background-color: rgb(28, 28, 32) /*bg_prim*/;
+					color: rgb(238, 238, 238) /*txt*/;
+					border: 1px solid black;
+					selection-background-color: rgb(236, 157, 0) /*accent*/;
+					outline: 0;
+				}
+				QComboBox::drop-down
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(0, 0, 0) /*bg_gen*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					subcontrol-origin: padding;
+					subcontrol-position: top right;
+					width: 15px;
+					border-left-width: 1px;
+					border-left-color: black;
+					border-left-style: solid; 
+				}
+				QComboBox::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 8px;
+					height: 8px;
+				}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>100%</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>75%</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>50%</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>25%</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>0%</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="process_image_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>blanks</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QGroupBox" name="groupBox_2">
+                 <property name="title">
+                  <string>flags</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QCheckBox" name="dont_show_check">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <stylestrategy>PreferAntialias</stylestrategy>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>dont show</string>
+                    </property>
+                    <property name="tristate">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QCheckBox" name="gpu1">
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>2 gpu</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QCheckBox" name="map_check">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>map</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0" colspan="2">
+                   <widget class="QCheckBox" name="clear_check">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>clear</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QSpinBox" name="cache_input">
+                    <property name="maximumSize">
+                     <size>
+                      <width>75</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                    </property>
+                    <property name="maximum">
+                     <number>1000000000</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0" colspan="2">
+                   <widget class="QCheckBox" name="results">
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>results .txt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QCheckBox" name="cache">
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>cache</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="QPushButton" name="train_button">
+                    <property name="maximumSize">
+                     <size>
+                      <width>346</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>TRAIN</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QCheckBox" name="random">
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>random</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QCheckBox" name="gpu2">
+                    <property name="styleSheet">
+                     <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                    </property>
+                    <property name="text">
+                     <string>3 gpu</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QGroupBox" name="groupBox_8">
+                 <property name="title">
+                  <string>change style</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QPushButton" name="import_stylesheet">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>import style</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="clear_imports">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>clear imports</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox">
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="title">
+                  <string>train</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="browse_data">
+                    <property name="maximumSize">
+                     <size>
+                      <width>347</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>data</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="data_label">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(245, 245, 220);</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="browse_cfg">
+                    <property name="maximumSize">
+                     <size>
+                      <width>347</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>cfg</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="cfg_label">
+                    <property name="styleSheet">
+                     <string notr="true">alternate-background-color: rgb(245, 245, 220);
+background-color: rgb(245, 245, 220);</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="browse_weights">
+                    <property name="maximumSize">
+                     <size>
+                      <width>347</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>weights</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="weights_label">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">alternate-background-color: rgb(245, 245, 220);
+background-color: rgb(245, 245, 220);</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="3">
+                <widget class="QGroupBox" name="groupBox_7">
+                 <property name="title">
+                  <string>crop images</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <item row="1" column="4">
+                   <widget class="QComboBox" name="jpg_png">
+                    <property name="styleSheet">
+                     <string notr="true">				QComboBox
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(59, 61, 62) /*bg_alt*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					border: 1px solid #000;
+					padding-left: 6px;
+					color: rgb(238, 238, 238) /*txt*/;
+					height: 20px;
+				}
+				QComboBox::disabled
+				{
+					background-color: #404040;
+					color: #656565;
+					border-color: rgb(0, 0, 0) /*bg_gen*/;
+				}
+				QComboBox:on
+				{
+					background-color: rgb(236, 157, 0) /*accent*/;
+					color: rgb(28, 28, 28) /*txt_bg*/;
+				}
+				QComboBox QAbstractItemView
+				{
+					background-color: rgb(28, 28, 32) /*bg_prim*/;
+					color: rgb(238, 238, 238) /*txt*/;
+					border: 1px solid black;
+					selection-background-color: rgb(236, 157, 0) /*accent*/;
+					outline: 0;
+				}
+				QComboBox::drop-down
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(0, 0, 0) /*bg_gen*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					subcontrol-origin: padding;
+					subcontrol-position: top right;
+					width: 15px;
+					border-left-width: 1px;
+					border-left-color: black;
+					border-left-style: solid; 
+				}
+				QComboBox::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 8px;
+					height: 8px;
+				}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>jpg</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>png</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="import_images_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>images</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QSpinBox" name="width_input">
+                    <property name="styleSheet">
+                     <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                    </property>
+                    <property name="minimum">
+                     <number>32</number>
+                    </property>
+                    <property name="maximum">
+                     <number>2016</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>32</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="5">
+                   <widget class="QPushButton" name="crop_button">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>crop</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QSpinBox" name="height_input">
+                    <property name="styleSheet">
+                     <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                    </property>
+                    <property name="minimum">
+                     <number>32</number>
+                    </property>
+                    <property name="maximum">
+                     <number>2016</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>32</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLabel" name="label_4">
+                    <property name="text">
+                     <string>height</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>width</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="CFG_EDITOR">
+       <attribute name="title">
+        <string>CFG_YAML EDIT</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(193, 190, 188);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="lineWidth">
+           <number>10</number>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBox_9">
+             <property name="title">
+              <string>calcualte anchors</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QPushButton" name="import_data_button">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+  	font-size: 8pt;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>data </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="clusters_spinbox">
+                <property name="styleSheet">
+                 <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                </property>
+                <property name="minimum">
+                 <number>6</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="width_spinbox">
+                <property name="styleSheet">
+                 <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                </property>
+                <property name="minimum">
+                 <number>32</number>
+                </property>
+                <property name="maximum">
+                 <number>2016</number>
+                </property>
+                <property name="singleStep">
+                 <number>32</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="height_spinbox">
+                <property name="styleSheet">
+                 <string notr="true">				QSpinBox,QDoubleSpinBox,
+				QDateTimeEdit 
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					color : rgb(238, 238, 238) /*txt*/;
+					border: 1px solid #000;
+					padding: 3px;
+					padding-left: 5px;
+					border-radius : 2px;
+				}
+				QDoubleSpinBox::up-button, 
+				QSpinBox::up-button, 
+				QDateTimeEdit::up-button
+				{
+					border-top-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-button:hover, 
+				QSpinBox::up-button:hover, 
+				QDateTimeEdit::up-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::up-button:pressed, 
+				QSpinBox::up-button:pressed, 
+				QDateTimeEdit::up-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::up-arrow,
+				QSpinBox::up-arrow,
+				QDateTimeEdit::up-arrow
+				{
+					image: url(:/16x16/icons/16x16/up.gif);
+					width: 7px;
+					height: 7px;
+				}
+				QDoubleSpinBox::down-button, 
+				QSpinBox::down-button, 
+				QDateTimeEdit::down-button
+				{
+					border-bottom-right-radius:2px;
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-button:hover, 
+				QSpinBox::down-button:hover, 
+				QDateTimeEdit::down-button:hover
+				{
+					background-color: rgb(59, 61, 62) /*bg_alt*/;
+				}
+				QDoubleSpinBox::down-button:pressed,
+				QSpinBox::down-button:pressed, 
+				QDateTimeEdit::down-button:pressed
+				{
+					background-color: rgb(0, 0, 0) /*bg_gen*/;
+					width: 16px; 
+					border-width: 1px;
+				}
+				QDoubleSpinBox::down-arrow,
+				QSpinBox::down-arrow,
+				QDateTimeEdit::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 7px;
+					height: 7px;
+				}</string>
+                </property>
+                <property name="minimum">
+                 <number>32</number>
+                </property>
+                <property name="maximum">
+                 <number>2016</number>
+                </property>
+                <property name="singleStep">
+                 <number>32</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="show_checkbox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                </property>
+                <property name="text">
+                 <string>show</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="calculate_anchors_button">
+                <property name="styleSheet">
+                 <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>CALC ANCHORS</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QTableWidget" name="cfg_table">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>20</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1920</width>
+               <height>1080</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(193, 190, 188);</string>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhPreferNumbers</set>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="midLineWidth">
+              <number>10</number>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustToContents</enum>
+             </property>
+             <property name="showDropIndicator" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="dragDropOverwriteMode">
+              <bool>true</bool>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectItems</enum>
+             </property>
+             <property name="textElideMode">
+              <enum>Qt::ElideMiddle</enum>
+             </property>
+             <property name="verticalScrollMode">
+              <enum>QAbstractItemView::ScrollPerItem</enum>
+             </property>
+             <property name="horizontalScrollMode">
+              <enum>QAbstractItemView::ScrollPerItem</enum>
+             </property>
+             <property name="sortingEnabled">
+              <bool>false</bool>
+             </property>
+             <property name="cornerButtonEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="verticalHeaderCascadingSectionResizes">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderMinimumSectionSize">
+              <number>22</number>
+             </attribute>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QGroupBox" name="groupBox_10">
+             <property name="title">
+              <string>cfg/yaml</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="cfg_open_label">
+                <property name="maximumSize">
+                 <size>
+                  <width>1192</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(245, 245, 220);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="import_yaml_button">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>YAML</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="btn_open_file">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>CFG</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QPushButton" name="btn_save_file">
+                <property name="styleSheet">
+                 <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>SAVE</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QCheckBox" name="hide_activation_checkbox">
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                </property>
+                <property name="text">
+                 <string>hide activation </string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="default_yaml_path">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(245, 245, 220);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="anchors_button">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>anchors</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ULTRALYTICS">
+       <attribute name="title">
+        <string>ULTRALYTICS</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0" colspan="2">
+         <widget class="QFrame" name="frame_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(193, 190, 188);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="groupBox_12">
+             <property name="title">
+              <string>test weights</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="pytorch_version_label">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(245, 245, 220);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="pytorch_version">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>weights</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QCheckBox" name="video">
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox{
+					background-color: transparent;
+					color: black /*txt*/;
+					border: none;
+				}
+				QCheckBox::disabled
+				{
+					color: #656565;
+				}
+				/*-----QRadioButton-----*/
+				QRadioButton 
+				{
+					color: lightgray;
+					background-color: transparent;
+				}</string>
+                </property>
+                <property name="text">
+                 <string>show video</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="img_video">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>img/video</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="img_video_path_label">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(245, 245, 220);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="auto_label">
+                <property name="styleSheet">
+                 <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>play</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBox_11">
+             <property name="title">
+              <string>ultralytics train</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <item row="4" column="0">
+               <widget class="QPushButton" name="train2">
+                <property name="styleSheet">
+                 <string notr="true">
+QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color:  rgb(255, 255, 0);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>train</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>epcochs</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2" colspan="3">
+               <widget class="QLineEdit" name="yaml_label">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(245, 245, 220);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QComboBox" name="task">
+                <property name="styleSheet">
+                 <string notr="true">				QComboBox
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(59, 61, 62) /*bg_alt*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					border: 1px solid #000;
+					padding-left: 6px;
+					color: rgb(238, 238, 238) /*txt*/;
+					height: 20px;
+				}
+				QComboBox::disabled
+				{
+					background-color: #404040;
+					color: #656565;
+					border-color: rgb(0, 0, 0) /*bg_gen*/;
+				}
+				QComboBox:on
+				{
+					background-color: rgb(236, 157, 0) /*accent*/;
+					color: rgb(28, 28, 28) /*txt_bg*/;
+				}
+				QComboBox QAbstractItemView
+				{
+					background-color: rgb(28, 28, 32) /*bg_prim*/;
+					color: rgb(238, 238, 238) /*txt*/;
+					border: 1px solid black;
+					selection-background-color: rgb(236, 157, 0) /*accent*/;
+					outline: 0;
+				}
+				QComboBox::drop-down
+				{
+					background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0  rgb(0, 0, 0) /*bg_gen*/,stop:1 rgb(28, 28, 32) /*bg_prim*/);
+					subcontrol-origin: padding;
+					subcontrol-position: top right;
+					width: 15px;
+					border-left-width: 1px;
+					border-left-color: black;
+					border-left-style: solid; 
+				}
+				QComboBox::down-arrow
+				{
+					image: url(:/16x16/icons/16x16/down.gif);
+					width: 8px;
+					height: 8px;
+				}</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>detect</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>segment</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>classify</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="imgsz_input">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>32</string>
+                </property>
+                <property name="cursorPosition">
+                 <number>2</number>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <widget class="QLineEdit" name="batch_input">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+
+alternate-background-color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="text">
+                 <string>-1</string>
+                </property>
+                <property name="cursorPosition">
+                 <number>2</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLineEdit" name="epochs_input">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>3</string>
+                </property>
+                <property name="cursorPosition">
+                 <number>1</number>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="model_input">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>model</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2" colspan="3">
+               <widget class="QLineEdit" name="pt_label">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(245, 245, 220);</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="data_input">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>data</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>size</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>batches</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>DARKNET_CHART</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QFrame" name="darknet_Chart_frame">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="lineWidth">
+           <number>10</number>
+          </property>
+          <property name="midLineWidth">
+           <number>10</number>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QPushButton" name="import_chart">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(59, 61, 62), stop:1 rgb(0, 0, 0));
+    color: rgb(238, 238, 238);
+    font-size: 11px;
+    min-width: 53px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+QPushButton:flat {
+    background-color: transparent;
+    border: none;
+    color: rgb(238, 238, 238);
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #656565;
+    border-color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+    background-color: rgba(236, 157, 0, 51);
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid rgb(236, 157, 0);
+}
+
+QPushButton:checked {
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgb(28, 28, 32), stop:1 rgb(0, 0, 0));
+    border: 1px solid #222;
+}</string>
+                </property>
+                <property name="text">
+                 <string>chart</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="chart_png">
+                <property name="minimumSize">
+                 <size>
+                  <width>525</width>
+                  <height>525</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>1920</width>
+                  <height>1080</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(252, 255, 233);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::WinPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Sunken</enum>
+                </property>
+                <property name="midLineWidth">
+                 <number>10</number>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
