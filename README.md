@@ -4,7 +4,7 @@ This is a training framework for 5 and 8 using ultralytics, and for yolo 12347 .
 
 ![Traininer](trainer.gif)
 
-# Darknet-PyTorch Trainer
+# Trainer
 
 This Python trainer simplifies the process of training and fine-tuning Darknet models with various features and options, making it easier to achieve better results in less time. With a user-friendly interface, the trainer streamlines the workflow and reduces the manual work required to train models on custom datasets.
 
