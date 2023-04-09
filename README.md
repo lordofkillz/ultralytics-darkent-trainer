@@ -1,4 +1,4 @@
-# Python Darknet PyTorch Trainer
+# TRAINER
 
 This is a training framework for 5 and 8 using ultralytics, and for yolo 12347 .weights using Darknet framework.
 
