@@ -6,3 +6,4 @@ PyYAML==6.0
 opencv-python==4.7.0.68
 torch==1.13.1+cu116
 ultralytics==8.0.48
+noise
