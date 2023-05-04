@@ -1,9 +1,13 @@
 
 clearml==1.9.1
-numpy @ file:///D:/bld/numpy_1675642738915/work
+numpy 
 torch==1.13.1+cu116
 PyYAML==6.0
 opencv-python==4.7.0.68
 torch==1.13.1+cu116
 ultralytics==8.0.48
 noise
+scikit-image
+matplotlib
+PyQt5
+pillow
