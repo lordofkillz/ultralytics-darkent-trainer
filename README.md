@@ -24,6 +24,6 @@ This Python trainer simplifies the process of training and fine-tuning Darknet m
 
 ## Getting Started
 
-To get started with the Darknet-PyTorch Trainer, download the files and follow the instructions in the README file to set up the required dependencies and environment. After setting up the environment, follow the README file's detailed instructions to train and fine-tune your Darknet models using the various features and options provided by the trainer. Happy training!
+To get started with the Darknet-PyTorch Trainer, download the files and follow the instructions in the README file to set up the required dependencies and environment. After setting up the environment, follow the README file's detailed instructions to train and fine-tune your Darknet models using the various features and options provided by the trainer. Happy training! i recommend putting darknet and ultralyics in your system environment variables path this will allow you to call them from any working directory.
 inlcluded Darknet_installer.exe that will attempt to install darknet.
 
